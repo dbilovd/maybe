@@ -49,7 +49,7 @@ services:
     image: ghcr.io/dbilovd/maybe:latest
     volumes:
       - app-storage:/rails/storage
-    expose: 
+    ports: 
       - 3000
     restart: unless-stopped
     environment:
